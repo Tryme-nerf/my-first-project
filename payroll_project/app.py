@@ -42,7 +42,11 @@ def _ensure_streamlit_theme():
 _ensure_streamlit_theme()
 
 
-8
+# Optional login-page background image.
+# Option A: paste a direct image URL between the quotes below.
+# Option B: leave it blank and drop a file named login_bg.jpg (or .png) into an
+#           "assets" folder next to this file.
+# If neither is set, a navy gradient is used so the page still looks intentional.
 LOGIN_BG_URL = ""
 
 _DEFAULT_LOGIN_BG_B64 = "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDEwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIHNsaWNlIj48ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwNzE2MzQiLz4KICAgIDxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjMGQyYTU4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNTQxN2YiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyIgY3g9IjAuNCIgY3k9IjAuNDIiIHI9IjAuNiI+CiAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxZjVhYTgiIHN0b3Atb3BhY2l0eT0iMC41NSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGExYzNkIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyYWRpYWxHcmFkaWVudCBpZD0ibm9kZSIgY3g9IjAuNSIgY3k9IjAuNSIgcj0iMC41Ij4KICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2NmZTZmZiIvPgogICAgPHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiM3ZmIyZTgiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNmN2ZjOCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8ZmlsdGVyIGlkPSJzb2Z0IiB4PSItNTAlIiB5PSItNTAlIiB3aWR0aD0iMjAwJSIgaGVpZ2h0PSIyMDAlIj4KICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMiLz4KICA8L2ZpbHRlcj4KPC9kZWZzPjxyZWN0IHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjEwMDAiIGZpbGw9InVybCgjYmcpIi8+PHJlY3Qgd2lkdGg9IjE2MDAiIGhlaWdodD0iMTAwMCIgZmlsbD0idXJsKCNnbG93KSIvPjxjaXJjbGUgY3g9IjEyMzAiIGN5PSI1MDAiIHI9IjQwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2Y2ZmIwIiBzdHJva2Utb3BhY2l0eT0iMC4yOCIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48ZWxsaXBzZSBjeD0iMTIzMCIgY3k9IjUwMCIgcng9IjExMiIgcnk9IjQwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGY4NmM2IiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48ZWxsaXBzZSBjeD0iMTIzMCIgY3k9IjUwMCIgcng9IjIzMiIgcnk9IjQwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGY4NmM2IiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48ZWxsaXBzZSBjeD0iMTIzMCIgY3k9IjUwMCIgcng9IjM0MCIgcnk9IjQwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGY4NmM2IiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48ZWxsaXBzZSBjeD0iMTIzMCIgY3k9IjIzNiIgcng9IjQwMCIgcnk9IjM2IiBmaWxsPSJub25lIiBzdHJva2U9IiM0Zjg2YzYiIHN0cm9rZS1vcGFjaXR5PSIwLjE0IiBzdHJva2Utd2lkdGg9IjEuMSIvPjxlbGxpcHNlIGN4PSIxMjMwIiBjeT0iMzY0IiByeD0iNDAwIiByeT0iNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRmODZjNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTQiIHN0cm9rZS13aWR0aD0iMS4xIi8+PGVsbGlwc2UgY3g9IjEyMzAiIGN5PSI1MDAiIHJ4PSI0MDAiIHJ5PSI0OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGY4NmM2IiBzdHJva2Utb3BhY2l0eT0iMC4xNCIgc3Ryb2tlLXdpZHRoPSIxLjEiLz48ZWxsaXBzZSBjeD0iMTIzMCIgY3k9IjYzNiIgcng9IjQwMCIgcnk9IjQ1IiBmaWxsPSJub25lIiBzdHJva2U9IiM0Zjg2YzYiIHN0cm9rZS1vcGFjaXR5PSIwLjE0IiBzdHJva2Utd2lkdGg9IjEuMSIvPjxlbGxpcHNlIGN4PSIxMjMwIiBjeT0iNzY0IiByeD0iNDAwIiByeT0iMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRmODZjNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTQiIHN0cm9rZS13aWR0aD0iMS4xIi8+PGxpbmUgeDE9IjEwMDYiIHkxPSI5MiIgeDI9IjkwMCIgeTI9IjI2MCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjEwMDYiIHkxPSI5MiIgeDI9IjEyNTgiIHkyPSI3NiIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjEwMDYiIHkxPSI5MiIgeDI9IjY4NCIgeTI9Ijk2IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iNDY3IiB5MT0iMjYyIiB4Mj0iNTY0IiB5Mj0iMjA0IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iNDY3IiB5MT0iMjYyIiB4Mj0iMzYwIiB5Mj0iMzAwIiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iNDY3IiB5MT0iMjYyIiB4Mj0iMzg0IiB5Mj0iNTA1IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTE1MCIgeTE9IjY1MiIgeDI9IjEyNTMiIHkyPSI2NzAiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIxMTUwIiB5MT0iNjUyIiB4Mj0iMTI1NSIgeTI9IjY5OCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjExNTAiIHkxPSI2NTIiIHgyPSIxMjg4IiB5Mj0iNjAyIiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTM4MCIgeTE9IjE0NSIgeDI9IjEyNTgiIHkyPSI3NiIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjEzODAiIHkxPSIxNDUiIHgyPSIxNDc3IiB5Mj0iMzU5IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iNjg0IiB5MT0iOTYiIHgyPSI1NjQiIHkyPSIyMDQiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI2ODQiIHkxPSI5NiIgeDI9IjkwMCIgeTI9IjI2MCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjM4NCIgeTE9IjUwNSIgeDI9IjM4NiIgeTI9IjU3NyIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjM4NCIgeTE9IjUwNSIgeDI9IjI1MCIgeTI9IjY0MCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjM4NCIgeTE9IjUwNSIgeDI9IjM2MCIgeTI9IjMwMCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9Ijk5IiB5MT0iMjQxIiB4Mj0iMTk3IiB5Mj0iMTUzIiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iOTkiIHkxPSIyNDEiIHgyPSIzNjAiIHkyPSIzMDAiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIxMDIyIiB5MT0iNTM5IiB4Mj0iMTI1MyIgeTI9IjY3MCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjEwMjIiIHkxPSI1MzkiIHgyPSIxMjg4IiB5Mj0iNjAyIiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMzg2IiB5MT0iNTc3IiB4Mj0iMjUwIiB5Mj0iNjQwIiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMzg2IiB5MT0iNTc3IiB4Mj0iNjIwIiB5Mj0iNTQ1IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTI1OCIgeTE9Ijc2IiB4Mj0iMTQ3NyIgeTI9IjM1OSIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjEyNTMiIHkxPSI2NzAiIHgyPSIxMjU1IiB5Mj0iNjk4IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTI1MyIgeTE9IjY3MCIgeDI9IjEyODgiIHkyPSI2MDIiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIxMjUzIiB5MT0iNjcwIiB4Mj0iMTMxNCIgeTI9IjU4OSIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjU2NCIgeTE9IjIwNCIgeDI9IjM2MCIgeTI9IjMwMCIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjE0NzciIHkxPSIzNTkiIHgyPSIxMzM1IiB5Mj0iNTY3IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTQ3NyIgeTE9IjM1OSIgeDI9IjEzMTQiIHkyPSI1ODkiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIxOTciIHkxPSIxNTMiIHgyPSIzNjAiIHkyPSIzMDAiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIxMzE0IiB5MT0iNTg5IiB4Mj0iMTI4OCIgeTI9IjYwMiIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjEzMTQiIHkxPSI1ODkiIHgyPSIxMzM1IiB5Mj0iNTY3IiBzdHJva2U9IiM1Yzk1ZDYiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTI1NSIgeTE9IjY5OCIgeDI9IjEyODgiIHkyPSI2MDIiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI4NTQiIHkxPSI5MDciIHgyPSI3ODAiIHkyPSI3MjAiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI2MjAiIHkxPSI1NDUiIHgyPSI2MjAiIHkyPSI0NzAiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI2MjAiIHkxPSI1NDUiIHgyPSI3ODAiIHkyPSI3MjAiIHN0cm9rZT0iIzVjOTVkNiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIxMjg4IiB5MT0iNjAyIiB4Mj0iMTMzNSIgeTI9IjU2NyIgc3Ryb2tlPSIjNWM5NWQ2IiBzdHJva2Utb3BhY2l0eT0iMC4xNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTEyNyIgY3k9IjQ2IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjM2NSIgY3k9IjI4OSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSIyMzMiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTYyIiBjeT0iMjc4IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjEwMTciIGN5PSIzNjUiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iNTkyIiBjeT0iMjEwIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjQyNyIgY3k9IjkzNyIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxMDM3IiBjeT0iNjA5IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjI3NCIgY3k9IjcyOSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIyNjEiIGN5PSIzNzkiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTU4MyIgY3k9IjY0MCIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI4OTEiIGN5PSI2ODUiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTM0OSIgY3k9Ijc3NiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIzNjYiIGN5PSIzMiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI1MDUiIGN5PSIyNjgiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMzM4IiBjeT0iOTQzIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjE0MDIiIGN5PSIzMTUiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTA0OSIgY3k9IjM5NiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNDYzIiBjeT0iNDU5IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjQyNCIgY3k9IjI0NyIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI4OTgiIGN5PSIyNjMiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iOTM1IiBjeT0iODk4IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjYzOSIgY3k9IjIxOSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNTk2IiBjeT0iNTEwIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjE0NSIgY3k9IjQ3IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjE3NSIgY3k9IjYyNyIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxMjY3IiBjeT0iNDIyIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjEwMiIgY3k9IjM4MiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNTk0IiBjeT0iNTI5IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjE1NTQiIGN5PSI4NjEiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTgiIGN5PSI3MjEiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTA5MSIgY3k9IjUzNyIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI0MjciIGN5PSI2NDEiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTc4IiBjeT0iNDM1IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjcyNiIgY3k9Ijk1NCIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNDAxIiBjeT0iMjYzIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjgwMSIgY3k9IjE3OSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNDYwIiBjeT0iODcxIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjQ3OCIgY3k9IjYzOSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI5NzQiIGN5PSIxNTMiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTIyMCIgY3k9IjUzOSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxMjQ2IiBjeT0iNTMwIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjEiIGN5PSIzMjQiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMzEiIGN5PSI5MjkiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTQwNiIgY3k9IjgzMiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI0OTIiIGN5PSI1OCIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNDA1IiBjeT0iOTQ3IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjEzNyIgY3k9IjQ4NiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxMTEiIGN5PSI3NjEiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTIyNSIgY3k9IjEyOCIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI3NjAiIGN5PSI1NTAiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iNDI0IiBjeT0iODcyIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjY3NyIgY3k9IjIxMiIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI4NjMiIGN5PSI3MzAiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMzIyIiBjeT0iMzEyIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjE1OTIiIGN5PSI2NTAiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iNzAxIiBjeT0iNTE4IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjE5NCIgY3k9IjIyNSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI1NDEiIGN5PSI1ODgiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMzY4IiBjeT0iMjIwIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjExNCIgY3k9IjYzMSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIzNjYiIGN5PSI5MDUiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTM3NSIgY3k9IjcxIiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjM4MSIgY3k9IjY2OSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIzNDMiIGN5PSIxMzIiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTQ5NyIgY3k9IjU3MSIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI3NTYiIGN5PSI3ODUiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iMTI5MiIgY3k9IjE5MCIgcj0iMS40IiBmaWxsPSIjOGZiZGVjIiBmaWxsLW9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSIxNTUiIGN5PSI0MzEiIHI9IjEuNCIgZmlsbD0iIzhmYmRlYyIgZmlsbC1vcGFjaXR5PSIwLjM1Ii8+PGNpcmNsZSBjeD0iNjc4IiBjeT0iNDY3IiByPSIxLjQiIGZpbGw9IiM4ZmJkZWMiIGZpbGwtb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjEwMDYiIGN5PSI5MiIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjEwMDYiIGN5PSI5MiIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iNDY3IiBjeT0iMjYyIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iNDY3IiBjeT0iMjYyIiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSIxMTUwIiBjeT0iNjUyIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTE1MCIgY3k9IjY1MiIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMTM4MCIgY3k9IjE0NSIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjEzODAiIGN5PSIxNDUiIHI9IjIuNiIgZmlsbD0iI2VhZjRmZiIvPjxjaXJjbGUgY3g9IjY4NCIgY3k9Ijk2IiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iNjg0IiBjeT0iOTYiIHI9IjIuNiIgZmlsbD0iI2VhZjRmZiIvPjxjaXJjbGUgY3g9IjM4NCIgY3k9IjUwNSIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjM4NCIgY3k9IjUwNSIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iOTkiIGN5PSIyNDEiIHI9IjEwIiBmaWxsPSJ1cmwoI25vZGUpIiBmaWx0ZXI9InVybCgjc29mdCkiLz48Y2lyY2xlIGN4PSI5OSIgY3k9IjI0MSIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMTAyMiIgY3k9IjUzOSIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjEwMjIiIGN5PSI1MzkiIHI9IjIuNiIgZmlsbD0iI2VhZjRmZiIvPjxjaXJjbGUgY3g9IjM4NiIgY3k9IjU3NyIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjM4NiIgY3k9IjU3NyIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMTI1OCIgY3k9Ijc2IiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTI1OCIgY3k9Ijc2IiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSIxMjUzIiBjeT0iNjcwIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTI1MyIgY3k9IjY3MCIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iNTY0IiBjeT0iMjA0IiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iNTY0IiBjeT0iMjA0IiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSIxNDc3IiBjeT0iMzU5IiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTQ3NyIgY3k9IjM1OSIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMTk3IiBjeT0iMTUzIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTk3IiBjeT0iMTUzIiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSIxMzE0IiBjeT0iNTg5IiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTMxNCIgY3k9IjU4OSIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMTI1NSIgY3k9IjY5OCIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjEyNTUiIGN5PSI2OTgiIHI9IjIuNiIgZmlsbD0iI2VhZjRmZiIvPjxjaXJjbGUgY3g9Ijg1NCIgY3k9IjkwNyIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9Ijg1NCIgY3k9IjkwNyIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iNjIwIiBjeT0iNTQ1IiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iNjIwIiBjeT0iNTQ1IiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSIxMjg4IiBjeT0iNjAyIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMTI4OCIgY3k9IjYwMiIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMTMzNSIgY3k9IjU2NyIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjEzMzUiIGN5PSI1NjciIHI9IjIuNiIgZmlsbD0iI2VhZjRmZiIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjMwMCIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjMwMCIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iMjUwIiBjeT0iNjQwIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iMjUwIiBjeT0iNjQwIiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSI2MjAiIGN5PSI0NzAiIHI9IjEwIiBmaWxsPSJ1cmwoI25vZGUpIiBmaWx0ZXI9InVybCgjc29mdCkiLz48Y2lyY2xlIGN4PSI2MjAiIGN5PSI0NzAiIHI9IjIuNiIgZmlsbD0iI2VhZjRmZiIvPjxjaXJjbGUgY3g9IjkwMCIgY3k9IjI2MCIgcj0iMTAiIGZpbGw9InVybCgjbm9kZSkiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPjxjaXJjbGUgY3g9IjkwMCIgY3k9IjI2MCIgcj0iMi42IiBmaWxsPSIjZWFmNGZmIi8+PGNpcmNsZSBjeD0iNzgwIiBjeT0iNzIwIiByPSIxMCIgZmlsbD0idXJsKCNub2RlKSIgZmlsdGVyPSJ1cmwoI3NvZnQpIi8+PGNpcmNsZSBjeD0iNzgwIiBjeT0iNzIwIiByPSIyLjYiIGZpbGw9IiNlYWY0ZmYiLz48Y2lyY2xlIGN4PSIzNjAiIGN5PSIzMDAiIHI9IjI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNhOWQxZjUiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjEuNCIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjMwMCIgcj0iMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZlYTZlMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMjIiIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjY0MCIgcj0iMjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2E5ZDFmNSIgc3Ryb2tlLW9wYWNpdHk9IjAuNDUiIHN0cm9rZS13aWR0aD0iMS40Ii8+PGNpcmNsZSBjeD0iMjUwIiBjeT0iNjQwIiByPSIzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNmVhNmUwIiBzdHJva2Utb3BhY2l0eT0iMC4yMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iNjIwIiBjeT0iNDcwIiByPSIyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTlkMWY1IiBzdHJva2Utb3BhY2l0eT0iMC40NSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48Y2lyY2xlIGN4PSI2MjAiIGN5PSI0NzAiIHI9IjM4IiBmaWxsPSJub25lIiBzdHJva2U9IiM2ZWE2ZTAiIHN0cm9rZS1vcGFjaXR5PSIwLjIyIiBzdHJva2Utd2lkdGg9IjEiLz48Y2lyY2xlIGN4PSI5MDAiIGN5PSIyNjAiIHI9IjI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNhOWQxZjUiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjEuNCIvPjxjaXJjbGUgY3g9IjkwMCIgY3k9IjI2MCIgcj0iMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZlYTZlMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMjIiIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9Ijc4MCIgY3k9IjcyMCIgcj0iMjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2E5ZDFmNSIgc3Ryb2tlLW9wYWNpdHk9IjAuNDUiIHN0cm9rZS13aWR0aD0iMS40Ii8+PGNpcmNsZSBjeD0iNzgwIiBjeT0iNzIwIiByPSIzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNmVhNmUwIiBzdHJva2Utb3BhY2l0eT0iMC4yMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+"
@@ -327,6 +331,8 @@ def init_database():
             philhealth REAL NOT NULL DEFAULT 0,
             pagibig REAL NOT NULL DEFAULT 0,
             cash_advance REAL NOT NULL DEFAULT 0,
+            late_minutes REAL NOT NULL DEFAULT 0,
+            late_deduction REAL NOT NULL DEFAULT 0,
             total_deductions REAL NOT NULL DEFAULT 0,
             net_pay REAL NOT NULL DEFAULT 0,
             created_at TEXT NOT NULL,
@@ -353,6 +359,21 @@ def init_database():
         )
     """)
 
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS attendance (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            employee_id INTEGER NOT NULL,
+            shift_type TEXT NOT NULL DEFAULT 'Day',
+            clock_in TEXT NOT NULL,
+            clock_out TEXT,
+            hours_worked REAL NOT NULL DEFAULT 0,
+            late_minutes REAL NOT NULL DEFAULT 0,
+            remarks TEXT,
+            created_at TEXT NOT NULL,
+            FOREIGN KEY(employee_id) REFERENCES employees(id)
+        )
+    """)
+
     default_settings = {
         "agency_name": "Prime Citadel",
         "location": "Q Plaza, Felix Ave, Cainta, Rizal",
@@ -360,6 +381,7 @@ def init_database():
         "night_diff_rate": "0.10",
         "holiday_multiplier": "2.0",
         "special_multiplier": "1.3",
+        "late_grace_minutes": "15",
         "sss": "500",
         "philhealth": "300",
         "pagibig": "100",
@@ -402,12 +424,20 @@ def migrate_schema():
             "ALTER TABLE payroll_records "
             "ADD COLUMN night_diff_pay REAL NOT NULL DEFAULT 0"
         )
-    for _col in ("holiday_shifts", "special_shifts", "holiday_pay", "cash_advance"):
+    for _col in ("holiday_shifts", "special_shifts", "holiday_pay", "cash_advance",
+                 "late_minutes", "late_deduction"):
         if _col not in rec_cols:
             cur.execute(
                 f"ALTER TABLE payroll_records "
                 f"ADD COLUMN {_col} REAL NOT NULL DEFAULT 0"
             )
+
+    att_cols = columns("attendance")
+    if att_cols and "late_minutes" not in att_cols:
+        cur.execute(
+            "ALTER TABLE attendance "
+            "ADD COLUMN late_minutes REAL NOT NULL DEFAULT 0"
+        )
 
     conn.commit()
     conn.close()
@@ -684,6 +714,7 @@ def calculate_pay(
     holiday_shifts=0.0,
     special_shifts=0.0,
     cash_advance=0.0,
+    late_minutes=0.0,
 ):
     basic_pay = hourly_rate * regular_hours
     ot_pay = hourly_rate * ot_multiplier * ot_hours
@@ -720,8 +751,13 @@ def calculate_pay(
         pagibig = 0
 
     cash_advance = max(0.0, float(cash_advance))
+
+    # Tardiness is deducted pro-rata: per-minute rate x minutes late.
+    late_minutes = max(0.0, float(late_minutes))
+    late_deduction = (hourly_rate / 60.0) * late_minutes
+
     statutory = sss + philhealth + pagibig
-    total_deductions = statutory + cash_advance
+    total_deductions = statutory + cash_advance + late_deduction
     net_pay = max(0.0, gross_pay - total_deductions)
 
     return {
@@ -734,9 +770,120 @@ def calculate_pay(
         "philhealth": philhealth,
         "pagibig": pagibig,
         "cash_advance": cash_advance,
+        "late_minutes": late_minutes,
+        "late_deduction": late_deduction,
         "total_deductions": total_deductions,
         "net_pay": net_pay,
     }
+
+
+SHIFT_WINDOWS = {
+    "Day": (9, 21),    # 9:00 AM - 9:00 PM
+    "Night": (21, 9),  # 9:00 PM - 9:00 AM (crosses midnight)
+}
+
+
+def compute_late_minutes(shift_type, clock_in_iso, grace=None):
+    """
+    Minutes late against the scheduled start of the shift
+    (Day = 9:00 AM, Night = 9:00 PM), after the configured grace period.
+    Arriving early or within the grace period returns 0.
+    """
+    if grace is None:
+        grace = float(get_setting("late_grace_minutes", "15"))
+
+    try:
+        actual = datetime.fromisoformat(str(clock_in_iso))
+    except Exception:
+        return 0.0
+
+    start_hour = SHIFT_WINDOWS.get(shift_type, (9, 21))[0]
+    scheduled = actual.replace(
+        hour=start_hour, minute=0, second=0, microsecond=0
+    )
+
+    minutes_late = (actual - scheduled).total_seconds() / 60.0
+
+    if minutes_late <= grace:
+        return 0.0
+
+    return round(minutes_late, 2)
+
+
+def attendance_df(employee_id=None, start=None, end=None, only_open=False):
+    """
+    Attendance log joined with employee names. Dates are filtered on the
+    clock-in date so a night duty belongs to the day it started.
+    """
+    query = """
+        SELECT
+            a.id,
+            a.employee_id,
+            e.name,
+            e.role,
+            a.shift_type,
+            a.clock_in,
+            a.clock_out,
+            a.hours_worked,
+            a.late_minutes,
+            a.remarks
+        FROM attendance a
+        JOIN employees e ON e.id = a.employee_id
+        WHERE 1 = 1
+    """
+    params = []
+
+    if employee_id is not None:
+        query += " AND a.employee_id = ?"
+        params.append(employee_id)
+
+    if start is not None:
+        query += " AND date(a.clock_in) >= date(?)"
+        params.append(str(start))
+
+    if end is not None:
+        query += " AND date(a.clock_in) <= date(?)"
+        params.append(str(end))
+
+    if only_open:
+        query += " AND a.clock_out IS NULL"
+
+    query += " ORDER BY a.clock_in DESC"
+
+    return pd.DataFrame(execute(query, tuple(params), fetch=True))
+
+
+def compute_hours(clock_in_iso, clock_out_iso):
+    """Elapsed hours between two ISO timestamps (handles crossing midnight)."""
+    try:
+        start = datetime.fromisoformat(str(clock_in_iso))
+        end = datetime.fromisoformat(str(clock_out_iso))
+        return max(0.0, round((end - start).total_seconds() / 3600.0, 2))
+    except Exception:
+        return 0.0
+
+
+def duties_from_attendance(employee_id, start_date, end_date):
+    """
+    Counts completed duties in a period, for auto-filling payroll entry.
+    Returns (day_duties, night_duties, total_hours, late_minutes).
+    """
+    df = attendance_df(employee_id=employee_id, start=start_date, end=end_date)
+
+    if df.empty:
+        return 0, 0, 0.0, 0.0
+
+    done = df[df["clock_out"].notna()]
+
+    if done.empty:
+        return 0, 0, 0.0, 0.0
+
+    day = int((done["shift_type"] == "Day").sum())
+    night = int((done["shift_type"] == "Night").sum())
+    hours = float(done["hours_worked"].sum())
+    late = float(done["late_minutes"].fillna(0).sum())
+
+    return day, night, hours, late
 
 
 def get_payroll_records(period_id=None):
@@ -765,6 +912,8 @@ def get_payroll_records(period_id=None):
             pr.philhealth,
             pr.pagibig,
             pr.cash_advance,
+            pr.late_minutes,
+            pr.late_deduction,
             pr.total_deductions,
             pr.net_pay,
             pp.period_name,
@@ -855,6 +1004,7 @@ page = st.sidebar.radio(
         "📊 Dashboard",
         "👤 Employee Registry",
         "📅 Payroll Periods",
+        "🕐 Clock In / Out",
         "⏱️ Payroll Entry",
         "📄 Payslips",
         "📚 Payroll History",
@@ -1515,6 +1665,354 @@ elif page == "📅 Payroll Periods":
 
 
 
+elif page == "🕐 Clock In / Out":
+
+    st.markdown(
+        """
+        <div class="q-section">
+            <h3>🕐 Clock In / Clock Out</h3>
+            <p>Record the daily time of each guard on duty. Completed duties feed the payroll computation.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    emp_df = employees_df()
+
+    if emp_df.empty:
+        st.warning("Register at least one employee first.")
+        st.stop()
+
+    active_emp = emp_df[emp_df["Active"] == 1].copy()
+
+    if active_emp.empty:
+        st.warning("There are no active employees.")
+        st.stop()
+
+    open_logs = attendance_df(only_open=True)
+    today_logs = attendance_df(start=date.today(), end=date.today())
+
+    st.markdown(
+        f"""
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0.9rem;margin-bottom:0.9rem;">
+            <div class="q-card">
+                <div class="q-label">🟢 Currently On Duty</div>
+                <div class="q-value">{len(open_logs)}</div>
+                <div class="q-note">Clocked in, not yet out</div>
+            </div>
+            <div class="q-card">
+                <div class="q-label">📋 Logs Today</div>
+                <div class="q-value">{len(today_logs)}</div>
+                <div class="q-note">Entries started today</div>
+            </div>
+            <div class="q-card">
+                <div class="q-label">👥 Active Personnel</div>
+                <div class="q-value">{len(active_emp)}</div>
+                <div class="q-note">Available for duty</div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    tab_in, tab_out, tab_log = st.tabs(
+        ["🟢 Clock In", "🔴 Clock Out", "📋 Attendance Log"]
+    )
+
+    # ---------------- CLOCK IN ----------------
+    with tab_in:
+
+        on_duty_ids = (
+            set(open_logs["employee_id"].tolist())
+            if not open_logs.empty
+            else set()
+        )
+
+        available = active_emp[~active_emp["ID"].isin(on_duty_ids)]
+
+        if available.empty:
+            st.info("All active employees are currently clocked in.")
+        else:
+            in_options = (
+                available["ID"].astype(str) + " — " + available["Name"]
+            ).tolist()
+
+            in_choice = st.selectbox(
+                "👤 Employee", in_options, key="clockin_emp"
+            )
+            in_emp_id = int(in_choice.split(" — ")[0])
+            in_emp_row = emp_df[emp_df["ID"] == in_emp_id].iloc[0]
+
+            shift_type = st.radio(
+                "Shift",
+                ["Day", "Night"],
+                horizontal=True,
+                key="clockin_shift",
+                help="Day = 9:00 AM–9:00 PM · Night = 9:00 PM–9:00 AM",
+            )
+
+            manual_in = st.checkbox(
+                "Set date & time manually", key="clockin_manual",
+                help="Use this to record a past duty or to prepare demo data.",
+            )
+
+            if manual_in:
+                mc1, mc2 = st.columns(2)
+                with mc1:
+                    in_date = st.date_input(
+                        "Clock-in date", value=date.today(), key="clockin_date"
+                    )
+                with mc2:
+                    default_t = (
+                        datetime.strptime("09:00", "%H:%M").time()
+                        if shift_type == "Day"
+                        else datetime.strptime("21:00", "%H:%M").time()
+                    )
+                    in_time = st.time_input(
+                        "Clock-in time", value=default_t, key="clockin_time"
+                    )
+                clock_in_dt = datetime.combine(in_date, in_time)
+            else:
+                clock_in_dt = None
+
+            in_remarks = st.text_input(
+                "Remarks (optional)", key="clockin_remarks",
+                placeholder="e.g. Late due to traffic",
+            )
+
+            if str(in_emp_row["License Status"]).lower() == "expired":
+                st.error(
+                    "⚠️ This employee's security license is EXPIRED. "
+                    "Renew it in the Employee Registry before assigning duty."
+                )
+
+            _grace = float(get_setting("late_grace_minutes", "15"))
+            _preview_stamp = (
+                clock_in_dt.isoformat() if clock_in_dt is not None else now_ph()[:19]
+            )
+            _preview_late = compute_late_minutes(shift_type, _preview_stamp)
+            _sched = "9:00 AM" if shift_type == "Day" else "9:00 PM"
+
+            if _preview_late > 0:
+                st.markdown(
+                    f"""
+                    <div class="q-alert" style="margin:0.4rem 0 0.6rem;">
+                        <strong>⏰ Late arrival</strong><br>
+                        Scheduled start is {_sched}. This clock-in is
+                        <b>{_preview_late:,.0f} minute(s) late</b> (after the
+                        {_grace:,.0f}-minute grace period) and will be deducted from pay.
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.caption(
+                    f"Scheduled start: {_sched} · grace period: {_grace:,.0f} minutes · on time."
+                )
+
+            if st.button("🟢 Clock In", use_container_width=True, key="btn_clockin"):
+                if str(in_emp_row["License Status"]).lower() == "expired":
+                    st.error("Cannot clock in an employee with an expired license.")
+                else:
+                    stamp = (
+                        clock_in_dt.isoformat()
+                        if clock_in_dt is not None
+                        else now_ph()[:19]
+                    )
+
+                    late_mins = compute_late_minutes(shift_type, stamp)
+
+                    execute(
+                        """
+                        INSERT INTO attendance
+                        (employee_id, shift_type, clock_in, clock_out,
+                         hours_worked, late_minutes, remarks, created_at)
+                        VALUES (?, ?, ?, NULL, 0, ?, ?, ?)
+                        """,
+                        (
+                            in_emp_id,
+                            shift_type,
+                            stamp,
+                            late_mins,
+                            in_remarks.strip(),
+                            now_ph(),
+                        ),
+                    )
+
+                    add_audit(
+                        "CLOCK IN",
+                        f"{in_emp_row['Name']} | {shift_type} shift | {stamp}"
+                        + (f" | LATE {late_mins:.0f} min" if late_mins else ""),
+                    )
+
+                    if late_mins > 0:
+                        st.warning(
+                            f"⚠️ {in_emp_row['Name']} clocked in "
+                            f"**{late_mins:.0f} minute(s) late** for the {shift_type} shift. "
+                            "This will be deducted from their pay."
+                        )
+                    else:
+                        st.success(
+                            f"{in_emp_row['Name']} clocked in on time ({shift_type} shift)."
+                        )
+                    st.rerun()
+
+    # ---------------- CLOCK OUT ----------------
+    with tab_out:
+
+        if open_logs.empty:
+            st.info("No one is currently clocked in.")
+        else:
+            out_options = (
+                open_logs["name"]
+                + "  —  "
+                + open_logs["shift_type"]
+                + " shift, in at "
+                + open_logs["clock_in"].astype(str).str.replace("T", " ", regex=False)
+                + "  (#"
+                + open_logs["id"].astype(str)
+                + ")"
+            ).tolist()
+
+            out_choice = st.selectbox(
+                "👤 Currently on duty", out_options, key="clockout_pick"
+            )
+            out_id = int(out_choice.split("(#")[1].rstrip(")"))
+            out_row = open_logs[open_logs["id"] == out_id].iloc[0]
+
+            manual_out = st.checkbox(
+                "Set date & time manually", key="clockout_manual",
+                help="Use this to close a past duty or to prepare demo data.",
+            )
+
+            if manual_out:
+                try:
+                    _in_dt = datetime.fromisoformat(str(out_row["clock_in"]))
+                except Exception:
+                    _in_dt = datetime.now()
+
+                _suggest = _in_dt + pd.Timedelta(hours=12)
+
+                oc1, oc2 = st.columns(2)
+                with oc1:
+                    out_date = st.date_input(
+                        "Clock-out date", value=_suggest.date(), key="clockout_date"
+                    )
+                with oc2:
+                    out_time = st.time_input(
+                        "Clock-out time", value=_suggest.time(), key="clockout_time"
+                    )
+                clock_out_dt = datetime.combine(out_date, out_time)
+            else:
+                clock_out_dt = None
+
+            if st.button("🔴 Clock Out", use_container_width=True, key="btn_clockout"):
+                stamp = (
+                    clock_out_dt.isoformat()
+                    if clock_out_dt is not None
+                    else now_ph()[:19]
+                )
+
+                hrs = compute_hours(out_row["clock_in"], stamp)
+
+                if hrs <= 0:
+                    st.error(
+                        "Clock-out time must be later than the clock-in time."
+                    )
+                else:
+                    execute(
+                        """
+                        UPDATE attendance
+                        SET clock_out = ?, hours_worked = ?
+                        WHERE id = ?
+                        """,
+                        (stamp, hrs, out_id),
+                    )
+
+                    add_audit(
+                        "CLOCK OUT",
+                        f"{out_row['name']} | {hrs:.2f} hrs | {stamp}",
+                    )
+                    st.success(
+                        f"{out_row['name']} clocked out. Duty length: {hrs:.2f} hours."
+                    )
+                    st.rerun()
+
+    # ---------------- LOG ----------------
+    with tab_log:
+
+        lf1, lf2 = st.columns(2)
+        with lf1:
+            log_from = st.date_input(
+                "From", value=date.today() - pd.Timedelta(days=30), key="log_from"
+            )
+        with lf2:
+            log_to = st.date_input("To", value=date.today(), key="log_to")
+
+        logs = attendance_df(start=log_from, end=log_to)
+
+        if logs.empty:
+            st.info("No attendance records in this range.")
+        else:
+            view = logs.copy()
+            view["clock_in"] = view["clock_in"].astype(str).str.replace("T", " ", regex=False)
+            view["clock_out"] = (
+                view["clock_out"].astype(str)
+                .str.replace("T", " ", regex=False)
+                .replace("None", "— on duty —")
+            )
+            view = view[
+                ["id", "employee_id", "name", "shift_type",
+                 "clock_in", "clock_out", "hours_worked", "late_minutes", "remarks"]
+            ]
+            view.columns = [
+                "Log #", "Employee ID", "Employee", "Shift",
+                "Clock In", "Clock Out", "Hours", "Late (min)", "Remarks",
+            ]
+
+            st.dataframe(view, use_container_width=True, hide_index=True)
+
+            total_hrs = float(logs["hours_worked"].sum())
+            total_late = float(logs["late_minutes"].fillna(0).sum())
+            late_count = int((logs["late_minutes"].fillna(0) > 0).sum())
+            st.caption(
+                f"{len(logs)} record(s) · {total_hrs:,.2f} total hours · "
+                f"{late_count} late arrival(s) totalling {total_late:,.0f} minutes."
+            )
+
+            st.download_button(
+                "📥 Download Attendance (CSV)",
+                data=view.to_csv(index=False).encode("utf-8"),
+                file_name=f"attendance_{log_from}_{log_to}.csv",
+                mime="text/csv",
+                use_container_width=True,
+            )
+
+            with st.expander("🗑️ Delete an attendance record"):
+                del_pick = st.selectbox(
+                    "Select record",
+                    (
+                        logs["name"] + " — " + logs["clock_in"].astype(str)
+                        + " (#" + logs["id"].astype(str) + ")"
+                    ).tolist(),
+                    key="att_del_pick",
+                )
+                confirm_del = st.checkbox(
+                    "I understand this permanently deletes the record.",
+                    key="att_del_confirm",
+                )
+                if st.button("Delete Record", use_container_width=True, key="att_del_btn"):
+                    if not confirm_del:
+                        st.error("Please tick the confirmation box first.")
+                    else:
+                        _did = int(del_pick.split("(#")[1].rstrip(")"))
+                        execute("DELETE FROM attendance WHERE id = ?", (_did,))
+                        add_audit("DELETE ATTENDANCE", del_pick)
+                        st.success("Attendance record deleted.")
+                        st.rerun()
+
+
+
 elif page == "⏱️ Payroll Entry":
 
     st.markdown(
@@ -1619,6 +2117,7 @@ elif page == "⏱️ Payroll Entry":
         default_holiday_shifts = float(record["holiday_shifts"])
         default_special_shifts = float(record["special_shifts"])
         default_cash_advance = float(record["cash_advance"])
+        default_late_minutes = float(record["late_minutes"])
 
     else:
 
@@ -1630,6 +2129,7 @@ elif page == "⏱️ Payroll Entry":
         default_holiday_shifts = 0.0
         default_special_shifts = 0.0
         default_cash_advance = 0.0
+        default_late_minutes = 0.0
 
     st.markdown(
         """
@@ -1662,12 +2162,57 @@ elif page == "⏱️ Payroll Entry":
             unsafe_allow_html=True,
         )
 
+        # Pull actual duties recorded in Clock In / Out for this period.
+        _att_day, _att_night, _att_hours, _att_late = duties_from_attendance(
+            employee_id,
+            period_row["Start Date"],
+            period_row["End Date"],
+        )
+
+        _sync_key = f"att_sync_{period_id}_{employee_id}"
+
+        if _att_day or _att_night:
+            _late_line = (
+                f"<br><b>⏰ {_att_late:,.0f} minute(s) late</b> recorded in this period."
+                if _att_late > 0
+                else "<br>No late arrivals recorded."
+            )
+            st.markdown(
+                f"""
+                <div class="q-alert q-ok" style="margin:0 0 0.7rem;">
+                    <strong>🕐 Attendance found for this period</strong><br>
+                    {_att_day} day duty(ies) · {_att_night} night duty(ies) ·
+                    {_att_hours:,.2f} hours logged.{_late_line}
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            if st.button(
+                "⬇️ Use attendance records",
+                use_container_width=True,
+                key=f"btn_{_sync_key}",
+            ):
+                st.session_state[_sync_key] = (
+                    float(_att_day), float(_att_night), float(_att_late)
+                )
+                st.rerun()
+        else:
+            st.caption(
+                "No completed duties recorded in Clock In / Out for this period — "
+                "enter the shift counts manually below."
+            )
+
+        if _sync_key in st.session_state:
+            (default_day_shifts, default_night_shifts,
+             default_late_minutes) = st.session_state[_sync_key]
+
         day_shifts = st.number_input(
             "Day Shifts (9AM–9PM)",
             min_value=0.0,
             max_value=31.0,
             value=default_day_shifts,
             step=1.0,
+            key=f"day_{period_id}_{employee_id}",
             help="Each day shift = 8 regular hrs + 4 OT hrs. No night differential.",
         )
 
@@ -1677,6 +2222,7 @@ elif page == "⏱️ Payroll Entry":
             max_value=31.0,
             value=default_night_shifts,
             step=1.0,
+            key=f"night_{period_id}_{employee_id}",
             help="Each night shift = 8 regular hrs + 4 OT hrs + 8 night-differential hrs.",
         )
 
@@ -1790,6 +2336,24 @@ elif page == "⏱️ Payroll Entry":
             help="Amount the employee borrowed against this pay, deducted from net pay.",
         )
 
+        late_minutes = st.number_input(
+            "Total minutes late (from attendance)",
+            min_value=0.0,
+            value=default_late_minutes,
+            step=5.0,
+            key=f"late_{period_id}_{employee_id}",
+            help=(
+                "Auto-filled from Clock In / Out. Deducted pro-rata at "
+                "(hourly rate ÷ 60) × minutes late."
+            ),
+        )
+
+        if late_minutes > 0:
+            st.caption(
+                f"⏰ {late_minutes:,.0f} min late × ₱{hourly_rate/60:,.4f}/min "
+                f"= ₱{(hourly_rate/60)*late_minutes:,.2f} tardiness deduction."
+            )
+
     calculation = calculate_pay(
         hourly_rate,
         regular_hours,
@@ -1799,6 +2363,7 @@ elif page == "⏱️ Payroll Entry":
         holiday_shifts,
         special_shifts,
         cash_advance,
+        late_minutes,
     )
 
     with right:
@@ -1859,6 +2424,11 @@ elif page == "⏱️ Payroll Entry":
 
         st.write(
             f"Cash Advance: **₱{calculation['cash_advance']:,.2f}**"
+        )
+
+        st.write(
+            f"Tardiness ({calculation['late_minutes']:,.0f} min): "
+            f"**₱{calculation['late_deduction']:,.2f}**"
         )
 
         st.write(
@@ -1940,13 +2510,15 @@ elif page == "⏱️ Payroll Entry":
                     philhealth,
                     pagibig,
                     cash_advance,
+                    late_minutes,
+                    late_deduction,
                     total_deductions,
                     net_pay,
                     created_at,
                     updated_at
                 )
                 VALUES
-                (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(period_id, employee_id)
                 DO UPDATE SET
                     regular_hours = excluded.regular_hours,
@@ -1965,6 +2537,8 @@ elif page == "⏱️ Payroll Entry":
                     philhealth = excluded.philhealth,
                     pagibig = excluded.pagibig,
                     cash_advance = excluded.cash_advance,
+                    late_minutes = excluded.late_minutes,
+                    late_deduction = excluded.late_deduction,
                     total_deductions = excluded.total_deductions,
                     net_pay = excluded.net_pay,
                     updated_at = excluded.updated_at
@@ -1988,6 +2562,8 @@ elif page == "⏱️ Payroll Entry":
                     calculation["philhealth"],
                     calculation["pagibig"],
                     calculation["cash_advance"],
+                    calculation["late_minutes"],
+                    calculation["late_deduction"],
                     calculation["total_deductions"],
                     calculation["net_pay"],
                     now,
@@ -2146,6 +2722,9 @@ elif page == "📄 Payslips":
         <b>Cash Advance:</b>
         -₱{slip["cash_advance"]:,.2f}<br>
 
+        <b>Tardiness ({slip["late_minutes"]:,.0f} min):</b>
+        -₱{slip["late_deduction"]:,.2f}<br>
+
         <b>Total Deductions:</b>
         -₱{slip["total_deductions"]:,.2f}<br>
 
@@ -2186,6 +2765,7 @@ SSS: PHP {slip["sss"]:,.2f}
 PhilHealth: PHP {slip["philhealth"]:,.2f}
 Pag-IBIG: PHP {slip["pagibig"]:,.2f}
 Cash Advance: PHP {slip["cash_advance"]:,.2f}
+Tardiness ({slip["late_minutes"]:,.0f} min): PHP {slip["late_deduction"]:,.2f}
 
 Total Deductions: PHP {slip["total_deductions"]:,.2f}
 
@@ -2234,6 +2814,7 @@ NET TAKE-HOME PAY: PHP {slip["net_pay"]:,.2f}
     <div class="row"><span>PhilHealth</span><b>-&#8369;{row["philhealth"]:,.2f}</b></div>
     <div class="row"><span>Pag-IBIG</span><b>-&#8369;{row["pagibig"]:,.2f}</b></div>
     <div class="row"><span>Cash Advance</span><b>-&#8369;{row["cash_advance"]:,.2f}</b></div>
+    <div class="row"><span>Tardiness ({row["late_minutes"]:,.0f} min)</span><b>-&#8369;{row["late_deduction"]:,.2f}</b></div>
     <div class="row"><span>Total Deductions</span><b>-&#8369;{row["total_deductions"]:,.2f}</b></div>
     <div class="net"><span>NET TAKE-HOME PAY</span><span>&#8369;{row["net_pay"]:,.2f}</span></div>
     <p class="muted">Generated by Q Plaza Automated Payroll System &bull; {html.escape(now_ph()[:10])}</p>
@@ -2332,6 +2913,8 @@ elif page == "📚 Payroll History":
             "holiday_pay",
             "gross_pay",
             "cash_advance",
+            "late_minutes",
+            "late_deduction",
             "total_deductions",
             "net_pay",
         ]
@@ -2350,6 +2933,8 @@ elif page == "📚 Payroll History":
         "Holiday Pay",
         "Gross Pay",
         "Cash Advance",
+        "Late (min)",
+        "Late Deduction",
         "Deductions",
         "Net Pay",
     ]
@@ -2566,6 +3151,217 @@ elif page == "📥 Reports":
             use_container_width=True,
             hide_index=True,
         )
+
+        # ------------------- ANALYTICS -------------------
+        st.markdown("---")
+
+        st.markdown(
+            """
+            <div class="q-section">
+                <h3>📈 Payroll Analytics</h3>
+                <p>Trends, pay composition, and workforce cost indicators across payroll periods.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        ana = records.copy()
+
+        # Order periods chronologically for the trend charts
+        period_order = (
+            ana.groupby("period_name")["start_date"].min().sort_values().index.tolist()
+        )
+
+        # --- Key indicators ---
+        total_gross_a = float(ana["gross_pay"].sum())
+        total_net_a = float(ana["net_pay"].sum())
+        total_ded_a = float(ana["total_deductions"].sum())
+        total_ot_pay = float(ana["ot_pay"].sum())
+        total_ot_hrs = float(ana["ot_hours"].sum())
+        avg_net = float(ana["net_pay"].mean())
+        n_periods = ana["period_name"].nunique()
+        headcount = ana["employee_id"].nunique()
+
+        ot_share = (total_ot_pay / total_gross_a * 100) if total_gross_a else 0.0
+        ded_share = (total_ded_a / total_gross_a * 100) if total_gross_a else 0.0
+        avg_cost_period = (total_gross_a / n_periods) if n_periods else 0.0
+
+        st.markdown(
+            f"""
+            <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0.9rem;">
+                <div class="q-card">
+                    <div class="q-label">📈 Avg. Payroll / Period</div>
+                    <div class="q-value" style="font-size:1.3rem;">₱{avg_cost_period:,.2f}</div>
+                    <div class="q-note">{n_periods} period(s) recorded</div>
+                </div>
+                <div class="q-card">
+                    <div class="q-label">💵 Avg. Net per Payslip</div>
+                    <div class="q-value" style="font-size:1.3rem;">₱{avg_net:,.2f}</div>
+                    <div class="q-note">{headcount} employee(s)</div>
+                </div>
+                <div class="q-card">
+                    <div class="q-label">⏱️ Overtime Share</div>
+                    <div class="q-value" style="font-size:1.3rem;">{ot_share:,.1f}%</div>
+                    <div class="q-note">{total_ot_hrs:,.0f} OT hours total</div>
+                </div>
+                <div class="q-card">
+                    <div class="q-label">📉 Deduction Rate</div>
+                    <div class="q-value" style="font-size:1.3rem;">{ded_share:,.1f}%</div>
+                    <div class="q-note">of total gross payroll</div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("")
+
+        # --- Trend: gross vs net per period ---
+        st.markdown("**Payroll cost trend (gross vs. net per period)**")
+        trend = (
+            ana.groupby("period_name")[["gross_pay", "net_pay"]]
+            .sum()
+            .reindex(period_order)
+        )
+        trend.columns = ["Gross Pay", "Net Pay"]
+        st.line_chart(trend)
+
+        # --- Pay composition ---
+        st.markdown("**Pay composition per period**")
+        comp = (
+            ana.groupby("period_name")[
+                ["basic_pay", "ot_pay", "night_diff_pay", "holiday_pay"]
+            ]
+            .sum()
+            .reindex(period_order)
+        )
+        comp.columns = ["Basic", "Overtime", "Night Diff.", "Holiday/Rest-day"]
+        st.bar_chart(comp)
+
+        comp_total = comp.sum()
+        if float(comp_total.sum()) > 0:
+            shares = (comp_total / comp_total.sum() * 100).round(1)
+            st.caption(
+                "Overall earnings mix — "
+                + " · ".join(f"{k}: {v:,.1f}%" for k, v in shares.items())
+            )
+
+        col_a, col_b = st.columns(2)
+
+        # --- Deductions breakdown ---
+        with col_a:
+            st.markdown("**Deductions breakdown (total)**")
+            ded = pd.DataFrame(
+                {
+                    "Amount": [
+                        float(ana["sss"].sum()),
+                        float(ana["philhealth"].sum()),
+                        float(ana["pagibig"].sum()),
+                        float(ana["cash_advance"].sum()),
+                        float(ana["late_deduction"].sum()),
+                    ]
+                },
+                index=["SSS", "PhilHealth", "Pag-IBIG", "Cash Advance", "Tardiness"],
+            )
+            st.bar_chart(ded)
+
+        # --- Top earners ---
+        with col_b:
+            st.markdown("**Top earners (total net pay)**")
+            top = (
+                ana.groupby("name")["net_pay"]
+                .sum()
+                .sort_values(ascending=False)
+                .head(5)
+            )
+            top.index.name = "Employee"
+            st.bar_chart(top.rename("Net Pay"))
+
+        # --- Per-period detail table ---
+        st.markdown("**Period-by-period indicators**")
+        detail = (
+            ana.groupby("period_name")
+            .agg(
+                Employees=("employee_id", "nunique"),
+                Regular_Hours=("regular_hours", "sum"),
+                OT_Hours=("ot_hours", "sum"),
+                Gross=("gross_pay", "sum"),
+                Deductions=("total_deductions", "sum"),
+                Net=("net_pay", "sum"),
+            )
+            .reindex(period_order)
+            .reset_index()
+        )
+        detail["Avg Net / Employee"] = (
+            detail["Net"] / detail["Employees"].replace(0, pd.NA)
+        )
+        detail.columns = [
+            "Payroll Period", "Employees", "Regular Hours", "OT Hours",
+            "Gross Pay", "Deductions", "Net Pay", "Avg Net / Employee",
+        ]
+
+        detail_fmt = detail.copy()
+        for _c in ["Gross Pay", "Deductions", "Net Pay", "Avg Net / Employee"]:
+            detail_fmt[_c] = detail_fmt[_c].map(
+                lambda v: f"₱{float(v):,.2f}" if pd.notna(v) else "—"
+            )
+
+        st.dataframe(detail_fmt, use_container_width=True, hide_index=True)
+
+        st.download_button(
+            "📥 Download Analytics Summary (CSV)",
+            data=detail.to_csv(index=False).encode("utf-8"),
+            file_name="q_plaza_payroll_analytics.csv",
+            mime="text/csv",
+            use_container_width=True,
+        )
+
+        # --- Attendance analytics ---
+        att_all = attendance_df()
+        if not att_all.empty:
+            st.markdown("---")
+            st.markdown("**Attendance overview (from Clock In / Out)**")
+
+            done_att = att_all[att_all["clock_out"].notna()]
+
+            a1, a2, a3 = st.columns(3)
+            a1.metric("Total duties logged", f"{len(done_att):,}")
+            a2.metric("Hours logged", f"{float(done_att['hours_worked'].sum()):,.1f}")
+            a3.metric(
+                "Avg. duty length",
+                f"{float(done_att['hours_worked'].mean()):,.2f} hrs"
+                if not done_att.empty else "—",
+            )
+
+            if not done_att.empty:
+                _late_series = done_att["late_minutes"].fillna(0)
+                _late_ct = int((_late_series > 0).sum())
+                _punctual = (
+                    (len(done_att) - _late_ct) / len(done_att) * 100
+                ) if len(done_att) else 0.0
+
+                b1, b2, b3 = st.columns(3)
+                b1.metric("Late arrivals", f"{_late_ct:,}")
+                b2.metric("Total minutes late", f"{float(_late_series.sum()):,.0f}")
+                b3.metric("Punctuality rate", f"{_punctual:,.1f}%")
+
+                shift_mix = done_att.groupby("shift_type").size()
+                shift_mix.index.name = "Shift"
+                st.bar_chart(shift_mix.rename("Duties"))
+
+                if _late_ct > 0:
+                    st.markdown("**Most late minutes by employee**")
+                    late_by_emp = (
+                        done_att.assign(_lm=_late_series)
+                        .groupby("name")["_lm"]
+                        .sum()
+                        .sort_values(ascending=False)
+                        .head(5)
+                    )
+                    late_by_emp = late_by_emp[late_by_emp > 0]
+                    if not late_by_emp.empty:
+                        late_by_emp.index.name = "Employee"
+                        st.bar_chart(late_by_emp.rename("Minutes Late"))
 
     st.markdown("---")
 
@@ -2832,6 +3628,18 @@ elif page == "⚙️ Settings":
             help="Pay rate for special non-working days or rest days. Labor Code is 1.3 (130%).",
         )
 
+        late_grace = st.number_input(
+            "Late Grace Period (minutes)",
+            min_value=0.0,
+            max_value=60.0,
+            value=float(get_setting("late_grace_minutes", "15")),
+            step=5.0,
+            help=(
+                "Minutes allowed after the scheduled shift start before an arrival "
+                "counts as late. Tardiness is deducted at (hourly rate / 60) x minutes late."
+            ),
+        )
+
         st.subheader(
             "Deduction Assumptions"
         )
@@ -2904,6 +3712,11 @@ elif page == "⚙️ Settings":
             set_setting(
                 "special_multiplier",
                 special_multiplier,
+            )
+
+            set_setting(
+                "late_grace_minutes",
+                late_grace,
             )
 
             set_setting(
