@@ -626,6 +626,8 @@ if not st.session_state.authenticated:
         .main .block-container h1 {{
             font-size: 1.4rem;
             letter-spacing: -0.01em;
+            color: #ffffff !important;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.45);
         }}
         </style>
         """,
